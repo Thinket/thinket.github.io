@@ -3,21 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Ryan Underwood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         body {
+            background-color: lemonchiffon;
             margin: 0 auto;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         .main-container {
+            text-align:center;
             display: flex;
-            max-width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: khaki;
+            max-width: 85%;
+            float: left;
+            box-shadow: 2px 10px 40px #000;
         }
+        .main-container h1 {
+            font-size: 4em;
+        }
+        .main-container span {
+            font-size: 1.3em;
+            background-color:lightblue;
+            padding: 40px;
+            margin-left: 10px;
+            border: 1px solid #000;
+        }
+        .profile-overlay {
+            background-image: url("img/ryan_underwood_profile_image.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-width: 25vw;
+            min-height: 28vh;
+            color: #fff;
+            font-size:2em;
+            font-weight: bold;
+        }
+        .linked-in {
+            padding: 1em;
+            border-radius: 6px;
+            box-shadow: 2px 2px 10px #000;
+            background-color: darkblue;
+            color: #fff;
+            font-size:3em;
+        }
+
     </style>
 </head>
 <body>
     <div class="main-container">
-        <h1>Ryan Underwood</h1>
-        <span>This is my landing page. Want to get in touch? Check out my <a href="https://www.linkedin.com/in/ryanunderwood2/" target="_blank">LinkedIn!</a></span>
+        <article>
+            <h1>Ryan Underwood</h1>
+            <div class="profile-overlay"></div>
+            <i class="linked-in fa-brands fa-linkedin-in"></i>
+            <span>This is my landing page. Want to get in touch? Check out my <a href="https://www.linkedin.com/in/ryanunderwood2/" target="_blank">LinkedIn!</a></span>
+        <article>
     </div>
 </body>
+
 </html>
